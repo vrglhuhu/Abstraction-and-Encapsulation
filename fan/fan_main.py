@@ -2,7 +2,12 @@
 # Fan Class
 
 # Create a class called fan.
+class Fan:
+    
 # Create 3 constants with values of 1,2, and 3.
+    SLOW = 1
+    MEDIUM = 2
+    FAST = 3
 
 # Accessor Methods
 # Make a private integer method for speed.
