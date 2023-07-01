@@ -28,6 +28,16 @@ class Fan:
 
 # Mutator Methods  
 # Make a mutator method for speed.
+    def set_speed(self, speed):
+        self._speed = speed
+
 # Make a mutator method to on the fan.
+    def set_on(self, on):
+        self._on = on
 # Make a mutator method for the radius of the fan.
+    def set_radius(self, radius):
+        self._radius = radius
+
 # Make a mutator method for the color of the fan.
+    def set_color(self, color):
+        self._color = color
