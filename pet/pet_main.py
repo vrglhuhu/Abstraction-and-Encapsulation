@@ -2,32 +2,27 @@
 # Pet Class
 
 from pet import Pet
+from pet_greetings import Greeting
+from pet_test import Test
 
+# Make def main
 def main():
-    my_pet = Pet()
+    test = Test()
+    greet = Greeting()
 
-    name = input("Enter the name of your pet: ")
-    my_pet.set_name(name)
-
-    animal_type = input("Enter the type of your pet (e.g., Dog, Cat, Bird): ")
-    my_pet.set_animal_type(animal_type)
+    # Print the welcome message 
+    greet.print_welcome_message()
 
     while True:
-        try:
-            age = int(input("Enter the age of your pet: "))
-            if age < 0:
-                raise ValueError
-            break
-        except ValueError:
-            print("Invalid input. Age must be a non-negative integer.")
+        test.user_prompts()
+        test.pet_info()
 
-    my_pet.set_age(age)
-
-    print("\nPet Information:")
-    print("Name:", my_pet.get_name())
-    print("Type:", my_pet.get_animal_type())
-    print("Age:", my_pet.get_age())
-
+        choice = input("\U0001F4CC \033[40m\033[33mDo you want to identify another pet? \033[40m\033[34mYES\033[0m or \033[40m\033[34mNO:\033[0m : ")
+        if choice.upper() != "YES":
+            print("\033[35mThank you for using this Pet Identification.💡\033[0m")
+            print()
+            greet.print_goodbye_message()
+            break  
 
 if __name__ == "__main__":
     main()
