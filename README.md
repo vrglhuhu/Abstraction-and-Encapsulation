@@ -10,16 +10,20 @@ _I am Chean Bernard V. Vergel.  I am 18 years old and currently I am a first ye
 ### **PROGRAMMING LANGUAGE USED**
 > Python
 
-### **Fan Status Indicator.**
+### **The Fan Status Indicator.**
 _This Fan Status indicator has a setter and getter function for retrieving and modifying its attributes. Speed, radius, color, and power are examples of these properties._
 
-_The Carr Speed Indicator program allows users to construct and assess their dream autos. It uses object-oriented programming techniques and has acceleration and braking capabilities._ 
+https://github.com/vrglhuhu/Abstraction-and-Encapsulation/assets/129587048/e2272ef4-bb8d-48c1-97d2-cf1111d7016d
 
+### **The Car Speed Indicator.**
+_The Car Speed Indicator program allows users to construct and assess their dream autos. It uses object-oriented programming techniques and has acceleration and braking capabilities._ 
 
+https://github.com/vrglhuhu/Abstraction-and-Encapsulation/assets/129587048/2cbfe6a2-d7a9-4646-ab74-469e1a0eb97f
 
+## **The Pet Identification.**
+_With the Pet Identification tool, you may create your ideal pet by defining its name, species, and age. Pet data is managed and maintained using the Pet class._
 
-
-
+https://github.com/vrglhuhu/Abstraction-and-Encapsulation/assets/129587048/8a16df45-a8d6-4f4b-aeed-a1255c36d617
 
 # _**Find me around the web**_ :earth_asia::earth_asia::earth_asia::
 _Please contact me at :envelope_with_arrow: vergelbernardchean@gmail.com or call me at :telephone_receiver: 0912-367-8985 if you have any questions._
