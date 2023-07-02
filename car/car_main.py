@@ -2,10 +2,25 @@
 # Car Class
 
 # Create a class called Car
-    # Make the data atrributes
-    # Create an accelerate method
-    # Create a brake method
-    # Create a speed method
+class Car:
 
+    # Make the data atrributes
+    def __init__(self, year_model, make):
+        self.__year_model = year_model
+        self.__make = make
+        self.__speed = 0
+ 
+    # Create an accelerate method
+    def accelerate(self):
+        self.__speed += 5
+
+    # Create a brake method
+    def brake(self):
+        self.__speed -= 5
+
+    # Create a speed method
+    def get_speed(self):
+        return self.__speed
+    
    
         
