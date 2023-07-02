@@ -11,11 +11,11 @@ class Fan:
  
  # Define the constructor with required arguments
     def __init__(self, speed, radius, color, on):
-        self.speed = speed
-        self.radius = radius
-        self.color = color
-        self.on = on
-        
+        self._speed = speed
+        self._radius = radius
+        self._color = color
+        self._on = on
+
 # Accessor Methods
 # Make a private integer method for speed.
     def get_speed(self):
