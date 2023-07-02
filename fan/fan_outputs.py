@@ -1,7 +1,7 @@
 # Vergel, Chean Bernard Villanueva
 # Fan Class
 
-from fan_main import Fan
+from fan_test import Fan
 
 # Make a def run test for fan 1
 class Outputs:

@@ -1,7 +1,7 @@
 # Vergel, Chean Bernard Villanueva
 # Car Class
 
-from car_main import Car
+from car_test import Car
 
 class Outputs:
     def accelerate(self,car):

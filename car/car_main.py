@@ -1,26 +1,27 @@
 # Vergel, Chean Bernard Villanueva
 # Car Class
 
-# Create a class called Car
-class Car:
+# Import the other file
+from car_test import Car
+from car_outputs import Outputs
+from car_greetings import Greeting
+from car_user_interface import Userinterface
 
-    # Make the data atrributes
-    def __init__(self, year_model, make):
-        self.__year_model = year_model
-        self.__make = make
-        self.__speed = 0
- 
-    # Create an accelerate method
-    def accelerate(self):
-        self.__speed += 5
+if __name__ == "__main__":
+    greet = Greeting()
+    ui = Userinterface()
 
-    # Create a brake method
-    def brake(self):
-        self.__speed -= 5
+    greet.print_welcome_message()
+    ui.name_user()
 
-    # Create a speed method
-    def get_speed(self):
-        return self.__speed
-    
-   
+
+    # Creating a class for car test
+    car = Car(2023, "Toyota")
+    out = Outputs()
+    # Print the initial speed
+    print("\n\U0001F6D1 \033[31mInitial Speed:\U0001F6D1 \033[31m", car.get_speed())
         
+    out.accelerate(car)
+    out.braking(car)
+
+    greet.print_goodbye_message()
