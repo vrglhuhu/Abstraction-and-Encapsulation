@@ -49,28 +49,3 @@ class Fan:
     def set_color(self, color):
         self._color = color
         
-# Make a def run test for fan 1
-    def runfan1_test(self):
-        
-        # Create Fan object
-        fan1 = Fan(speed=Fan.FAST, radius=10, color='yellow', on=True)
-        
-        # Display fan 1 properties
-        print("Fan 1:")
-        print("Speed:", fan1.get_speed())
-        print("Radius:", fan1.get_radius())
-        print("Color:", fan1.get_color())
-        print("On:", fan1.get_on())
-
-    # Make a def run test for fan 1
-    def runfan2_test(self):
-        
-        # Create Fan object
-        fan2 = Fan(speed=Fan.MEDIUM, radius=5, color='blue', on=False)
-        
-        # Display fan 1 properties
-        print("\nFan 2:")
-        print("Speed:", fan2.get_speed())
-        print("Radius:", fan2.get_radius())
-        print("Color:", fan2.get_color())
-        print("On:", fan2.get_on())  
