@@ -8,7 +8,14 @@ class Fan:
     SLOW = 1
     MEDIUM = 2
     FAST = 3
-
+ 
+ # Define the constructor with required arguments
+    def __init__(self, speed, radius, color, on):
+        self.speed = speed
+        self.radius = radius
+        self.color = color
+        self.on = on
+        
 # Accessor Methods
 # Make a private integer method for speed.
     def get_speed(self):
