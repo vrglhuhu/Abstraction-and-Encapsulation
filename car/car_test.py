@@ -19,7 +19,7 @@ if __name__ == "__main__":
     car = Car(2023, "Toyota")
     out = Outputs()
     # Print the initial speed
-    print("\nInitial Speed:", car.get_speed())
+    print("\n\U0001F6D1 \033[31mInitial Speed:\U0001F6D1 \033[31m", car.get_speed())
         
     out.accelerate(car)
     out.braking(car)
