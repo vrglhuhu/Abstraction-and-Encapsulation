@@ -1,32 +1,27 @@
 # Vergel, Chean Bernard Villanueva
 # Fan Class
 
+from fan_greetings import Greeting
 from fan_main import Fan
+from fan_user_interface import User_interface
 
-# Create a class named TestFan
-class TestFan:
+greeting = Greeting()
+ui = User_interface()
+fan = Fan()
 
-    # Make a def run test 
-    def run_test(self):
-        
-        # Create two Fan objects
-        fan1 = Fan(speed=Fan.FAST, radius=10, color='yellow', on=True)
-        fan2 = Fan(speed=Fan.MEDIUM, radius=5, color='blue', on=False)
+greeting.print_welcome_message()
 
-        # Display fan properties
-        print("Fan 1:")
-        print("Speed:", fan1.get_speed())
-        print("Radius:", fan1.get_radius())
-        print("Color:", fan1.get_color())
-        print("On:", fan1.get_on())
+while True: 
+    choice = ui.get_user_choice()
+    if choice.upper() == "A":
+        fan.runfan1()
+    elif choice.upper() == "B":
+        fan.runfan2() 
+    if not ui.continue_calculation():
+        print("\033[32mI hope this program helps and satisfy you.\033[0m")
+        break
+    else:
+        print("\U0001F6A7 \033[31mINVALID INPUT!\033[0m\U0001F6A7")
 
-        print("\nFan 2:")
-        print("Speed:", fan2.get_speed())
-        print("Radius:", fan2.get_radius())
-        print("Color:", fan2.get_color())
-        print("On:", fan2.get_on())
+greeting.print_goodbye_message()
 
-
-# Create an instance of TestFan and run the test
-test = TestFan()
-test.run_test()
